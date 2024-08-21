@@ -1,9 +1,11 @@
+import java.util.Arrays;
+
 public class Array {
     public enum Day{
         SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY
     }
 
-    public static final double PI =3.14159;
+    public static final float PI = 3.14159F;
     public static final double E = 2.71828;
     public static void main(String[] args){
         Day today = Day.FRIDAY;
@@ -60,5 +62,8 @@ public class Array {
         System.out.println("chieu dai: " + a.rong);
         System.out.printf("Chu vi: %f \n", a.chuvi());
         System.out.println("Dien Tich: " + a.dientich());
+        Hinhtron b = new Hinhtron(4, PI);
+        System.out.println("CHuvi: "+b.chuvihtron());
+        System.out.println("dientich: "+ b.dientich());
     }
 }
